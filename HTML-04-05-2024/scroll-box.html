@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrolling task</title>
+</head>
+<body>
+    <style>
+        .box{
+            height:20%;
+            width: 30%;
+            border: 1px solid black;
+            background-color: white;
+            
+        }
+    </style>
+    <style>
+        .demo :hover{
+            background-color: yellowgreen;
+            /* if the arrow will  touch the border the color will appear. */
+        }
+    </style>
+    <style>
+        .hi:focus{
+            outline: 1px solid red;
+            background-color:gray ;
+        }
+    </style>
+    
+        <div style="height: 500px;width: 500px;background-color: wheat;border: 1px solid black;" class="demo" >
+            <div style="height: 100%; overflow: scroll;position: relative;"> 
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div style="height: 20%;width: 20%;background-color: fuchsia;position: absolute;right: 0px;bottom: 0px;">hello
+                </div>
+            </div>  
+        </div>
+        <div style="height: 500px;width: 50pxpx;">
+           <input placeholder="Hi all" class="hi"/>
+        </div>
+    
+
+</body>
+</html>
