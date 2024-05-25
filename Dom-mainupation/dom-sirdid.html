@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>this is testing</title>
+
+    </head>
+    <body style="margin: 0px; height: 100vh;">
+        
+
+
+    </body>
+        <script>
+            function btnClick () {
+                const ip1 = document.getElementById('username')
+                const ip2 = document.getElementById('password')
+                console.log(ip1.value)
+                console.log(ip2.value)
+                const mainDiv = document.createElement('div')
+
+                const upTag = document.createElement('p')
+                const uSpan1 = document.createElement('span')
+                uSpan1.textContent = "Username : "
+                const uSpan2 = document.createElement('span')
+                uSpan2.textContent = ip1.value
+                upTag.appendChild(uSpan1)
+                upTag.appendChild(uSpan2)
+
+
+                const ppTag = document.createElement('p')
+                const pSpan1 = document.createElement('span')
+                pSpan1.textContent = "Password : "
+                const pSpan2 = document.createElement('span')
+                pSpan2.textContent = ip2.value
+                ppTag.appendChild(pSpan1)
+                ppTag.appendChild(pSpan2)
+
+                mainDiv.appendChild(upTag)
+                mainDiv.appendChild(ppTag)
+                document.body.appendChild(mainDiv)
+
+            }
+
+
+
+            // const newDiv = document.createElement('div');
+            // newDiv.innerHTML = "<p>This is testing</p>";
+            // newDiv.style.border = "1px solid black"
+            // newDiv.style.height = "250px"
+            // newDiv.style.width = "250px"
+            // newDiv.style.background = "yellow"
+            // newDiv.setAttribute('id', "test-id")
+            // const imgTag = document.createElement("img")
+            // imgTag.setAttribute('src', "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")
+            // imgTag.style.height = "100px"
+            // imgTag.style.width = "100px"
+            // newDiv.appendChild(imgTag)
+            // document.body.appendChild(newDiv);
+            // -------get elements by tag name --------------------
+            // const divDetails = document.getElementsByTagName('div')
+            // divDetails[0].innerHTML = "this is first div"
+            // divDetails[1].innerHTML = "this is second div"
+            // -------get elements by id --------------------
+            // const secondDiv = document.getElementById('second-div');
+            // console.log(secondDiv)
+            // -------get elements by class name --------------------
+            // const secondDiv = document.getElementsByClassName('second-style')
+            
+
+            // const mainDiv = document.createElement('div');
+            // mainDiv.style.height = "250px"
+            // mainDiv.style.width = "250px"
+            // mainDiv.style.backgroundColor = "green"
+
+            // const subDiv = document.createElement('div');
+            // subDiv.style.height = "150px"
+            // subDiv.style.width = "150px"
+            // subDiv.style.backgroundColor = "yellow"
+            // mainDiv.appendChild(subDiv)
+
+            // document.body.appendChild(mainDiv);
+ 
+
+
+        </script>
+</html>

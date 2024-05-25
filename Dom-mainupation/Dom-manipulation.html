@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const newDiv = document.createElement('test');
+    newDiv.style.height = "100vh";
+    newDiv.style.display = "flex"
+    newDiv.style.flexDirection = "column"
+    newDiv.style.alignItems = "center"
+    newDiv.style.justifyContent = "flex-start"
+    document.body.appendChild(newDiv);
+
+
+    const boxDiv1 = document.createElement('img')
+    boxDiv1.setAttribute('src',"https://wallpapercave.com/wp/wp4906049.jpg");
+    boxDiv1.style.height = "60%";
+    boxDiv1.style.width = "45%";
+    boxDiv1.style.display = "flex"
+    boxDiv1.style.flexDirection = "column"
+    boxDiv1.style.alignItems = "center"
+    boxDiv1.style.justifyContent =  "center"
+
+    newDiv.appendChild (boxDiv1);
+
+
+    const boxDiv2 = document.createElement('box')
+    boxDiv2.style.height = "50%"
+    boxDiv2.style.width = "50%"
+    boxDiv2.style.display = "flex"
+    boxDiv2.style.flexDirection = "column"
+    boxDiv2.style.background = "yellow"
+    boxDiv1.appendChild (boxDiv2);
+    newDiv.appendChild (boxDiv2);
+ 
+
+    
+
+
+
+</script>
+</html>
