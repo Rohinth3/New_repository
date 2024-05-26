@@ -9,7 +9,7 @@
     
 </body>
 <script>
-    const newDiv = document.createElement('test');
+    const newDiv = document.createElement('div');
     newDiv.style.height = "100vh";
     newDiv.style.display = "flex"
     newDiv.style.flexDirection = "column"
@@ -17,30 +17,103 @@
     newDiv.style.justifyContent = "flex-start"
     document.body.appendChild(newDiv);
 
-
+    //img
     const boxDiv1 = document.createElement('img')
     boxDiv1.setAttribute('src',"https://wallpapercave.com/wp/wp4906049.jpg");
     boxDiv1.style.height = "60%";
-    boxDiv1.style.width = "45%";
     boxDiv1.style.display = "flex"
-    boxDiv1.style.flexDirection = "column"
     boxDiv1.style.alignItems = "center"
     boxDiv1.style.justifyContent =  "center"
-
+    boxDiv1.style.position = "relative"
     newDiv.appendChild (boxDiv1);
 
-
-    const boxDiv2 = document.createElement('box')
-    boxDiv2.style.height = "50%"
-    boxDiv2.style.width = "50%"
+    //small box white
+    const boxDiv2 = document.createElement('div')
+    boxDiv2.style.height = "35%"
     boxDiv2.style.display = "flex"
     boxDiv2.style.flexDirection = "column"
-    boxDiv2.style.background = "yellow"
+    boxDiv2.style.position = "absolute"
+    boxDiv2.style.bottom = "80px"
+    boxDiv2.style.alignItems = "center"
+    boxDiv2.style.background =  "whitesmoke"
     boxDiv1.appendChild (boxDiv2);
     newDiv.appendChild (boxDiv2);
- 
 
+
+    //1st header
+    const smallBox1 = document.createElement ('div')
+    smallBox1.style.height = "30%"
+    smallBox1.style.width = "80%"
+    smallBox1.innerHTML = "<label>Feeling inspired? </label>"
+    smallBox1.style.fontSize = "30px"
+    smallBox1.style.fontWeight = "999"
+    smallBox1.style.alignItems = "center"
+    smallBox1.style.justifyContent = "center"
+    smallBox1.style.display = "flex"
+    boxDiv2.appendChild (smallBox1)      
     
+    //main para box
+    const smallBox2 = document.createElement ('div')
+    smallBox2.style.height = "30%"
+    smallBox2.style.width = "100%"
+    smallBox2.style.alignItems = "center"
+    smallBox2.style.justifyContent = "center"
+    smallBox2.style.display = "flex"
+    smallBox2.style.flexDirection = "column"
+    boxDiv2.appendChild (smallBox2)
+
+
+    //small para 1
+    const paraBox1 = document.createElement ('div')
+    paraBox1.style.height = "30%"
+    paraBox1.style.width = "100%"
+    paraBox1.style.alignItems = "center"
+    paraBox1.style.justifyContent = "center"
+    paraBox1.style.display = "flex"
+    paraBox1.textContent = "Lorem embrance one of the latest email trends-The Faux"
+
+    smallBox2.appendChild (paraBox1)
+    // boxDiv2.appendChild (paraBox1)
+
+
+    // //small para 2
+    const paraBox2 = document.createElement ('div')
+    paraBox2.style.height = "30%"
+    paraBox2.style.width = "100%"
+    paraBox2.style.alignItems = "center"
+    paraBox2.style.justifyContent = "center"
+    paraBox2.style.display = "flex"
+    paraBox2.textContent = "Absolutee positioning methid.There are many ways this"
+
+    smallBox2.appendChild (paraBox2)
+    // boxDiv2.appendChild (paraBox2)
+
+
+    // //small para 3
+    const paraBox3 = document.createElement ('div')
+    paraBox3.style.height = "30%"
+    paraBox3.style.width = "90%"
+    paraBox3.style.alignItems = "center"
+    paraBox3.style.justifyContent = "center"
+    paraBox3.style.display = "flex"
+    paraBox3.textContent = "method to utilize"
+
+    smallBox2.appendChild (paraBox3)
+    // boxDiv2.appendChild (paraBox3)
+
+
+
+    //button box
+    const smallBox3 = document.createElement ('div')
+    smallBox3.style.height = "30%"
+    smallBox3.style.width = "80%"
+    smallBox3.style.display = "flex"
+    smallBox3.style.alignItems = "center"
+    smallBox3.style.justifyContent = "center"
+    smallBox3.innerHTML = "<button style='background-color:black;color:white;width:400px;height:35px;padding:5px'>Try the design! </button>"
+    boxDiv2.appendChild (smallBox3)
+
+
 
 
 
