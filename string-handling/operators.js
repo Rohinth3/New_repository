@@ -7,3 +7,9 @@ let z = 7
 
 
 console.log(x>z || (y<z || x>y))
+
+
+let a = 5
+let b = 7
+
+console.log('1' + "Rohinth")
