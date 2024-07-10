@@ -6,20 +6,878 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="height: 100vh;display: flex;width: 100%;">
-        <div style="height:100% ;width: 4.5%;background-color: rgba(0, 0, 255, 0.701);display: flex;flex-direction: column;
-        align-items: center;justify-content: flex-start;">
-            <div>       
-                 <img style="height: 20PX;width: 20px;"  src="https://th.bing.com/th/id/OIP.K0yQb0xlurpLVh6BgtqfgQAAAA?w=64&h=64&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>        
-            </div>     
-        </div>
-        <div style="height: ; display: flex;flex-direction: column;background-color: black;align-items: flex-end;">
-            <!-- <div id="header" style="height: 134px;width: 1360px;background-color: bisque;">
+    <style>
+        .box{
+            height: 100%;
+            width: 320px;
+            border-radius: 20px;background-color: white;
+            display: flex;flex-direction: column;
+        }
+    </style>
 
-            </div> -->
-    
+    <!-- using check doubt scroll-box  -->
+    <style>
+        .demo:hover{
+            background-color: rgb(255, 238, 47);
+        }
+    </style>
+
+    <div style = "height: 100vh;display: flex;">
+        <!-- side coloumn blue -->
+        <div style="height: 100%;width:4%;background-color: #001848db;">
+            <div style="height: 50%;display: flex;flex-direction: column;align-items: center;justify-content: space-around;">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_624_42)">
+                <path d="M12.5 24.25C18.9893 24.25 24.25 18.9893 24.25 12.5C24.25 6.01065 18.9893 0.75 12.5 0.75C6.01065 0.75 0.75 6.01065 0.75 12.5C0.75 18.9893 6.01065 24.25 12.5 24.25Z" stroke="white" stroke-width="1.5"/>
+                <path d="M12 14.25C13.2426 14.25 14.25 13.2426 14.25 12C14.25 10.7574 13.2426 9.75 12 9.75C10.7574 9.75 9.75 10.7574 9.75 12C9.75 13.2426 10.7574 14.25 12 14.25Z" stroke="white" stroke-width="1.5"/>
+                <path d="M6.81396 6.39844L10.861 10.5664" stroke="white" stroke-width="1.5"/>
+                <path d="M10.415 6.4026C10.415 6.4026 14.12 5.61259 16.239 7.06059C18.358 8.50859 18.889 12.1916 18.889 12.1916" stroke="white" stroke-width="1.5"/>
+                <path d="M6.11621 12.2798C6.1617 11.8818 6.22846 11.4866 6.31621 11.0958C6.40414 10.7268 6.51434 10.3635 6.64621 10.0078" stroke="white" stroke-width="1.5"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_624_42">
+                <rect width="25" height="25" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_624_53)">
+                <path d="M1.5 4.5V26.5H23.5V4.5H1.5ZM0 3H25V28H0V3Z" fill="white"/>
+                <path d="M9.09635 7.4997C9.47321 5.90041 10.9123 4.7064 12.625 4.7064C14.3373 4.7064 15.7762 5.89989 16.1534 7.49867L16.4998 7.49856V1.5H8.5V7.49953L9.09635 7.4997ZM10.5001 9.0001L7 8.9991V0H17.9998V8.9981L14.7499 8.9991V8.3313C14.7499 7.15963 13.7967 6.2064 12.625 6.2064C11.4533 6.2064 10.5001 7.15963 10.5001 8.3313V9.0001Z" fill="white"/>
+                <path d="M8.46582 18.0305L11.3578 20.8795L16.4928 16.0234" stroke="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_624_53">
+                <rect width="25" height="28" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.70045 21.0301L11.3534 22.0151C11.3534 22.0151 10.7015 26.0801 13.5415 25.9981C16.3815 25.9161 15.5474 22.0151 15.5474 22.0151L18.3984 21.0301C18.3984 21.0301 20.3985 24.5041 22.3135 22.3681C24.2285 20.2321 21.2375 17.9861 21.2375 17.9861L22.3135 15.6861C22.3135 15.6861 26.0425 16.6551 25.9985 13.6101C25.9545 10.5651 22.3155 11.3431 22.3155 11.3431L21.2395 8.88511C21.2395 8.88511 23.9715 6.6471 22.3155 4.7681C20.6595 2.8891 17.9965 5.66312 17.9965 5.66312L16.0024 4.7681C16.0024 4.7681 16.5805 0.978095 13.5425 1.0001C10.5045 1.0221 11.3545 4.7681 11.3545 4.7681L8.70146 5.66312C8.70146 5.66312 6.61345 2.5941 4.69445 4.7681C2.77545 6.9421 5.46145 8.88511 5.46145 8.88511L4.69445 11.3431C4.69445 11.3431 0.835456 10.4081 1.00546 13.6061C1.17546 16.8041 4.69445 15.6821 4.69445 15.6821L5.46145 17.9821C5.46145 17.9821 2.92345 20.1431 4.69445 22.3641C6.46545 24.5851 8.70045 21.0301 8.70045 21.0301Z" stroke="white" stroke-width="1.5"/>
+                <path d="M13.6733 15.7969C15.1921 15.7969 16.4233 14.5657 16.4233 13.0469C16.4233 11.5281 15.1921 10.2969 13.6733 10.2969C12.1546 10.2969 10.9233 11.5281 10.9233 13.0469C10.9233 14.5657 12.1546 15.7969 13.6733 15.7969Z" stroke="white" stroke-width="1.5"/>
+            </svg>
+            <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.1605 14.3018L29 6.96579L25.4957 8.56867C23.5625 3.57552 18.7895 0 13.2313 0C5.92068 0 0 6.04092 0 13.5C0 20.9591 5.92068 27 13.2313 27C19.3938 27 24.5294 22.6849 26.0395 16.8906L23.7437 15.9659C22.6562 20.8359 18.3668 24.5346 13.2312 24.5346C7.24992 24.5344 2.41674 19.603 2.41674 13.5C2.41674 7.39705 7.25003 2.46593 13.2312 2.46593C17.8229 2.46593 21.75 5.42483 23.3206 9.49333L19.0311 11.4044L26.1605 14.3018Z" fill="white"/>
+            </svg>
+            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_624_67)">
+                <path d="M7.125 9.875H0.875V16.125H7.125V9.875Z" stroke="white" stroke-width="1.75"/>
+                <path d="M25.125 16.875H18.875V23.125H25.125V16.875Z" stroke="white" stroke-width="1.75"/>
+                <path d="M25.125 1.875H18.875V8.125H25.125V1.875Z" stroke="white" stroke-width="1.75"/>
+                <path d="M13 0V25" stroke="white" stroke-width="1.75"/>
+                <path d="M13.5 20.5H16.5" stroke="white" stroke-width="1.75"/>
+                <path d="M10 13H13" stroke="white" stroke-width="1.75"/>
+                <path d="M13 6H16" stroke="white" stroke-width="1.75"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_624_67">
+                <rect width="26" height="25" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+            </div>
         </div>
-        
+
+        <!-- main box -->
+        <div style="height: 100%;width: 96%;display: flex;flex-direction: column;align-items: center;">
+            <!-- solo tasks -->
+            <div style="height: 15%;width: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+                <div style="height: 50%;width: 90%;display: flex;margin-right: 70px;align-items: center;justify-content: space-between;">
+                    <label style="font-size: x-large;font-weight: 999;">
+                        Solo Tasks
+                    </label>
+                    <div style="display: flex;height: 100%;width: 8%;justify-content: space-between;">
+                        <div style="display: flex;align-items: flex-end;">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="29" height="29" rx="3.5" fill="white" stroke="#9299B4"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9782 12.631C17.0298 12.5788 17.1003 12.5496 17.174 12.5502C17.2474 12.55 17.3179 12.5792 17.37 12.631C17.4772 12.7397 17.4772 12.9146 17.37 13.0233C17.3186 13.0776 17.2472 13.1089 17.1723 13.11C17.0974 13.111 17.0254 13.0816 16.9725 13.0287C16.9194 12.9756 16.8902 12.9034 16.8913 12.8287C16.8923 12.7538 16.9238 12.6825 16.9782 12.631ZM17.174 14.014C17.5429 14.014 17.8908 13.8422 18.1153 13.5494C18.3399 13.2566 18.4154 12.876 18.3197 12.5196C18.2243 12.1632 17.9682 11.8715 17.6274 11.7305C17.2864 11.5892 16.8992 11.6148 16.5796 11.7993C16.2602 11.984 16.0447 12.3065 15.9966 12.6726C15.9486 13.0384 16.0734 13.4058 16.3343 13.6667C16.5571 13.8889 16.8591 14.014 17.1739 14.014L17.174 14.014ZM10.1911 19.8089L10.9421 18.3208L11.6797 19.0586L10.1917 19.8097L10.1911 19.8089ZM11.1409 17.2317V17.232C11.0383 17.1291 10.8924 17.0817 10.7491 17.1044C10.6043 17.1281 10.4797 17.2196 10.4135 17.3503L8.75572 20.6331C8.68521 20.7743 8.69276 20.9422 8.77587 21.0767C8.85897 21.2113 9.00565 21.2931 9.16368 21.2933C9.2344 21.2933 9.30428 21.2767 9.36745 21.2444L12.6512 19.5873C12.7822 19.5222 12.8733 19.3976 12.8951 19.2528C12.9188 19.109 12.8718 18.9627 12.769 18.8595L11.1409 17.2326L11.1409 17.2317ZM12.5222 12.8967V12.8969C12.2401 13.2806 11.994 13.6896 11.787 14.1188C11.1016 14.0249 10.4047 14.0541 9.7294 14.2048C10.4859 13.4659 11.4701 13.005 12.5221 12.8969L12.5222 12.8967ZM15.6072 11.1575C13.6436 12.5691 12.4047 14.2829 12.1709 15.8928L14.1076 17.8292C15.7174 17.5952 17.4315 16.3553 18.843 14.3929L18.8428 14.3931C19.3068 13.7452 19.7125 13.0577 20.0553 12.3385C20.0205 12.2936 19.9943 12.2426 19.9777 12.1884C19.6661 11.1479 18.8527 10.3334 17.8126 10.0209C17.757 10.0043 17.705 9.97747 17.6594 9.94158C16.9409 10.2849 16.254 10.6914 15.6073 11.1563L15.6072 11.1575ZM21.0639 8.93549C20.9839 9.70173 20.8083 10.4551 20.5409 11.1777C20.1527 10.4452 19.5535 9.84652 18.8211 9.45846C19.5441 9.1913 20.2975 9.01566 21.0639 8.93549ZM15.7953 20.2709C15.9457 19.5958 15.9747 18.8995 15.8809 18.2142C16.3096 18.0075 16.7182 17.7616 17.1014 17.4795C16.9946 18.5315 16.5342 19.5162 15.7953 20.2724L15.7953 20.2709ZM8.45515 15.6158C8.53112 15.6163 8.60582 15.5974 8.67256 15.5609C9.521 15.1052 10.4846 14.9092 11.4435 14.9976C11.3402 15.3298 11.2718 15.6719 11.2397 16.0182C11.2265 16.1531 11.2747 16.2866 11.3715 16.3817L13.6195 18.6304C13.7047 18.7156 13.8205 18.7634 13.9412 18.7632C13.9548 18.7634 13.9682 18.7628 13.9817 18.7613C14.3283 18.7284 14.6708 18.6599 15.0036 18.5571C15.0924 19.5164 14.8964 20.4808 14.4404 21.3293C14.3439 21.5051 14.3745 21.7232 14.5155 21.8657C14.6014 21.9513 14.7176 21.9996 14.8389 22C14.913 22.0002 14.9858 21.9822 15.0511 21.9473C15.9965 21.4495 16.7792 20.6915 17.307 19.7626C17.8348 18.8337 18.0853 17.7733 18.0289 16.7063C18.6018 16.1632 19.1214 15.5663 19.5804 14.9239C21.0477 12.8819 21.9761 10.4054 22 8.46066C22.0002 8.33831 21.9522 8.22078 21.8661 8.13348C21.7805 8.04764 21.664 7.99958 21.5427 8H21.5387C19.5938 8.02372 17.1175 8.95047 15.0759 10.4191C14.4329 10.8766 13.8363 11.3961 13.2947 11.97C12.2282 11.9134 11.1676 12.1635 10.239 12.6911C9.31016 13.2185 8.55198 14.0014 8.05418 14.9464C7.97842 15.087 7.98241 15.257 8.06425 15.3938C8.14631 15.5309 8.29447 15.6146 8.45395 15.6142L8.45515 15.6158Z" fill="#9299B4"/>
+                        </svg>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                        <svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="2" width="40" height="40" rx="10" fill="#F5F8FF"/>
+                            <path d="M26 18C26 16.4087 25.3679 14.8826 24.2426 13.7574C23.1174 12.6321 21.5913 12 20 12C18.4087 12 16.8826 12.6321 15.7574 13.7574C14.6321 14.8826 14 16.4087 14 18C14 25 11 27 11 27H29C29 27 26 25 26 18Z" stroke="#181821" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.73 31C21.5542 31.3031 21.3019 31.5547 20.9982 31.7295C20.6946 31.9044 20.3504 31.9965 20 31.9965C19.6496 31.9965 19.3054 31.9044 19.0018 31.7295C18.6982 31.5547 18.4458 31.3031 18.27 31" stroke="#181821" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="30.5" y="0.5" width="9" height="9" rx="3.5" fill="#E43641" stroke="white"/>
+                        </svg>  
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height: 40%;width: 95%;display: flex;justify-content: space-between; ">
+                    <div style="display: flex;align-items: center;">
+                        <select style="height: 25px;width: 130px;"class="demo">
+                            <option>All Flow</option>
+                            <option>No flow</option>
+                        </select>
+                        <select style="height: 25px;width: 130px;" class="demo">
+                            <option>All Node</option>
+                            <option>No Node/option>
+                        </select>
+                        <select style="height: 25px;width: 130px;" class="demo">
+                            <option>Select Assignee</option>
+                            <option>Not Applicable</option>
+                        </select>
+                        <select style="height: 25px;width: 130px;" class="demo">
+                            <option>Status</option>
+                            <option>No Status</option>
+                        </select>
+                    </div>
+                    <div style="display: flex;align-items: center;">
+                        <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 8C0 3.58172 3.58172 0 8 0H36V30H8C3.58172 30 0 26.4183 0 22V8Z" fill="#D7D9E5"/>
+                            <g clip-path="url(#clip0_624_107)">
+                            <path d="M13.0417 11.7943C13.686 11.7943 14.2083 11.2719 14.2083 10.6276C14.2083 9.98327 13.686 9.46094 13.0417 9.46094C12.3973 9.46094 11.875 9.98327 11.875 10.6276C11.875 11.2719 12.3973 11.7943 13.0417 11.7943Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M13.0417 16.4583C13.686 16.4583 14.2083 15.936 14.2083 15.2917C14.2083 14.6473 13.686 14.125 13.0417 14.125C12.3973 14.125 11.875 14.6473 11.875 15.2917C11.875 15.936 12.3973 16.4583 13.0417 16.4583Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M13.0417 21.1302C13.686 21.1302 14.2083 20.6079 14.2083 19.9635C14.2083 19.3192 13.686 18.7969 13.0417 18.7969C12.3973 18.7969 11.875 19.3192 11.875 19.9635C11.875 20.6079 12.3973 21.1302 13.0417 21.1302Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M16.5417 10.625H24.7084" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M16.5417 15.2969H24.7084" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M16.5417 19.9609H24.7084" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_624_107">
+                            <rect width="14" height="14" fill="white" transform="translate(11 8)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5H28C32.1421 0.5 35.5 3.85786 35.5 8V22C35.5 26.1421 32.1421 29.5 28 29.5H0.5V0.5Z" fill="white"/>
+                            <path d="M0.5 0.5H28C32.1421 0.5 35.5 3.85786 35.5 8V22C35.5 26.1421 32.1421 29.5 28 29.5H0.5V0.5Z" stroke="#223979"/>
+                            <g clip-path="url(#clip0_624_116)">
+                            <path d="M16.5416 9.46094H12.4583V13.5443H16.5416V9.46094Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M24.1248 9.46094H20.0415V13.5443H24.1248V9.46094Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M16.5416 17.0469H12.4583V21.1302H16.5416V17.0469Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M24.1248 17.0469H20.0415V21.1302H24.1248V17.0469Z" stroke="#2F3245" stroke-miterlimit="10" stroke-linecap="square"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_624_116">
+                            <rect width="14" height="14" fill="white" transform="translate(11 8)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                
+                    </div>
+                </div>
+            </div>
+            <!-- table formation -->
+            <div style="height: 77%;width: 100%;display: flex;flex-direction: column;justify-content: center; background-color: whitesmoke;">
+                <div style="display: flex;height:30%;width: 100%;margin-bottom: 10px;justify-content:space-around;">
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;border: 1px solid red;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.121);color: lightsalmon; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Time Out
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.252);color: red; height: 60%;width:220%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Error
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;height:30%;width: 100%;margin-bottom: 10px;justify-content:space-around ;">
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.121);color: lightsalmon; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Time Out
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.252);color: red; height: 60%;width:220%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Error
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;height:30%;width: 100%;margin-bottom: 10px;justify-content:space-around ;">
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.121);color: lightsalmon; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Time Out
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M17.0271 14.9974C17.0271 16.4797 15.9279 17.5807 14.6914 17.5807C13.4549 17.5807 12.3557 16.4797 12.3557 14.9974C12.3557 13.5151 13.4549 12.4141 14.6914 12.4141C15.9279 12.4141 17.0271 13.5151 17.0271 14.9974Z" stroke="#9299B4" stroke-width="1.5"/>
+                                    <path d="M20.9135 13.9894C21.2596 14.4345 21.4326 14.657 21.4326 15C21.4326 15.343 21.2596 15.5655 20.9135 16.0106C19.7778 17.4714 17.4182 20 14.6914 20C11.9646 20 9.60495 17.4714 8.46925 16.0106C8.12322 15.5655 7.95021 15.343 7.95021 15C7.95021 14.657 8.12322 14.4345 8.46924 13.9894C9.60495 12.5286 11.9646 10 14.6914 10C17.4182 10 19.7778 12.5286 20.9135 13.9894Z" stroke="#9299B4" stroke-width="1.5"/>
+                                </svg>                                                                                          
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(240, 128, 128, 0.252);color: red; height: 60%;width:220%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Error
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    FLOW NAME
+                                </label>
+                                <label>
+                                    Personal Loan
+                                </label>
+                            </div>
+                            <div style="height: 100%;width: 20%; display: flex;align-items: center;justify-content: space-between;">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <rect x="0.814209" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M21.6147 18.497L21.9824 18.8359C22.1589 18.6444 22.1589 18.3495 21.9824 18.1581L21.6147 18.497ZM14.7573 21.9453C14.7573 22.2215 14.9811 22.4453 15.2573 22.4453C15.5334 22.4453 15.7573 22.2215 15.7573 21.9453L14.7573 21.9453ZM19.9957 20.9911L21.9824 18.8359L21.2471 18.1581L19.2604 20.3133L19.9957 20.9911ZM21.9824 18.1581L19.9957 16.0029L19.2604 16.6807L21.2471 18.8359L21.9824 18.1581ZM21.6147 17.997L18.7056 17.997L18.7056 18.997L21.6147 18.997L21.6147 17.997ZM18.7056 17.997C16.525 17.997 14.7573 19.7647 14.7573 21.9453L15.7573 21.9453C15.7573 20.317 17.0773 18.997 18.7056 18.997L18.7056 17.997Z" fill="#223979"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0324 18.226C14.8058 18.2108 14.5778 18.2031 14.349 18.2031C12.5497 18.2031 10.8006 18.678 9.37306 19.5541C8.24641 20.2455 7.36974 21.1564 6.8213 22.193C6.58884 22.6324 6.87918 23.1398 7.36524 23.2439C10.0902 23.8279 12.87 24.0662 15.6397 23.9589C14.2335 23.7104 13.1653 22.4823 13.1653 21.0047C13.1653 19.7487 13.9371 18.673 15.0324 18.226Z" fill="#9299B4"/>
+                                    <ellipse cx="14.3492" cy="11.6696" rx="4.54105" ry="4.66962" fill="#9299B4"/>
+                                </svg>                                                                  
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.842773" y="0.5" width="26.7714" height="29" rx="2.5" fill="white" stroke="#D7D9E5"/>
+                                    <path d="M20.5 11.9969V19.7969C20.5 22.1969 19.1016 22.9969 17.375 22.9969H11.125C9.39844 22.9969 8 22.1969 8 19.7969V11.9969C8 9.39688 9.39844 8.79688 11.125 8.79688C11.125 9.29288 11.3203 9.74087 11.6406 10.0689C11.9609 10.3969 12.3984 10.5969 12.8828 10.5969H15.6172C16.5859 10.5969 17.375 9.78888 17.375 8.79688C19.1016 8.79688 20.5 9.39688 20.5 11.9969Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.375 8.8C17.375 9.792 16.5859 10.6 15.6172 10.6H12.8828C12.3984 10.6 11.9609 10.4 11.6406 10.072C11.3203 9.744 11.125 9.296 11.125 8.8C11.125 7.808 11.9141 7 12.8828 7H15.6172C16.1016 7 16.5391 7.2 16.8594 7.528C17.1797 7.856 17.375 8.304 17.375 8.8Z" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 15.7969H14.25" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.125 19H17.375" stroke="#9299B4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                      
+                            </div>
+
+                        </div>
+                        <div style="height: 30%;width: 90%;display: flex;justify-content: space-between;">
+                            <div style="height: 100%;width: 40%; display: flex;flex-direction: column;justify-content: space-around;justify-content: center;">
+                                <label style="color:grey;font-size: small;">
+                                    CUSTOMER ID
+                                </label>
+                                <label>
+                                    tim.jennings@example.com
+                                </label>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <label style="color:grey;font-size: small;text-align: end;">
+                                    NODE NAME
+                                </label>
+                                <label>
+                                    Basic Details
+                                </label>
+                            </div>
+                        </div>
+                        <div style="height: 30%;width: 90%;border-top: 1px solid rgba(128, 128, 128, 0.095); display: flex;justify-content: space-between;">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"> 
+                                <label style="background-color: rgba(173, 216, 230, 0.597);color: blue; height: 60%;width:150%;display: flex;align-items: center;justify-content: center; border-radius: 40px;">
+                                    Active
+                                </label>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <label style="color:grey;font-size: small;">
+                                    15 Feb 2022, 15:30
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div style="height: 8%;width: 99%;background-color: white; display: flex;justify-content: space-between;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;">
+                <div style="height: 100%;width: 10%;display: flex;align-items: center;justify-content: space-between;margin-left: 30px;">
+                    <svg width="71" height="13" viewBox="0 0 71 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0.741688H3.692C4.49436 0.69278 5.28707 0.937703 5.922 1.43069C6.18966 1.66683 6.40059 1.96031 6.5391 2.28927C6.67762 2.61824 6.74013 2.97421 6.722 3.33069C6.73859 3.68754 6.67478 4.04356 6.53526 4.37243C6.39575 4.7013 6.18412 4.99461 5.916 5.23069C5.28515 5.72729 4.49457 5.97624 3.693 5.93069H1.066V9.99769H0V0.741688ZM3.6 5.04169C4.15174 5.08219 4.69994 4.92556 5.147 4.59969C5.32419 4.44034 5.46302 4.24295 5.55308 4.02231C5.64313 3.80168 5.68208 3.56352 5.667 3.32569C5.68241 3.08886 5.64359 2.85163 5.55347 2.63207C5.46336 2.41251 5.32434 2.21641 5.147 2.05869C4.69819 1.7369 4.15079 1.58262 3.6 1.62269H1.066V5.04169H3.6ZM10.829 10.0887C10.2596 10.1006 9.69767 9.95676 9.204 9.67269C8.73385 9.39336 8.35619 8.98197 8.118 8.48969C7.85212 7.93047 7.72095 7.31674 7.735 6.69769C7.71969 6.07595 7.8509 5.45933 8.118 4.89769C8.35592 4.40555 8.73322 3.99417 9.203 3.71469C9.69667 3.43062 10.2586 3.28677 10.828 3.29869C11.3974 3.28677 11.9593 3.43062 12.453 3.71469C12.9235 3.99387 13.3015 4.40527 13.54 4.89769C13.8071 5.45933 13.9383 6.07595 13.923 6.69769C13.9374 7.31741 13.8062 7.93186 13.54 8.49169C13.302 8.98295 12.9251 9.39359 12.456 9.67269C11.9617 9.95711 11.3991 10.101 10.829 10.0887ZM10.829 9.21769C11.1111 9.23458 11.3932 9.18523 11.6528 9.07358C11.9124 8.96192 12.1423 8.79107 12.324 8.57469C12.7066 8.02601 12.8901 7.363 12.844 6.69569C12.8854 6.03535 12.697 5.38103 12.311 4.84369C12.1325 4.62609 11.9054 4.45338 11.648 4.33946C11.3906 4.22553 11.1101 4.17355 10.829 4.18769C10.5459 4.17283 10.2633 4.22442 10.0037 4.33833C9.74408 4.45223 9.51475 4.6253 9.334 4.84369C8.94751 5.38157 8.75918 6.03667 8.801 6.69769C8.75482 7.36604 8.94099 8.02983 9.328 8.57669C9.51148 8.79246 9.74256 8.96266 10.003 9.0739C10.2635 9.18514 10.5463 9.23436 10.829 9.21769ZM25.415 3.45869L22.997 9.99769H21.983L20.111 4.88869L18.256 9.99769H17.238L14.82 3.45869H15.925L17.771 8.73669L19.682 3.45869H20.605L22.49 8.74969L24.375 3.45869H25.415ZM32.175 6.69769H27.375C27.3347 7.37494 27.5411 8.04386 27.956 8.58069C28.1669 8.80075 28.4235 8.97185 28.7077 9.08192C28.992 9.19199 29.2969 9.23833 29.601 9.21769C30.371 9.21555 31.116 8.94422 31.707 8.45069L32.056 9.21769C31.7382 9.50497 31.3634 9.72202 30.956 9.85469C30.5152 10.0098 30.0513 10.0889 29.584 10.0887C29.1434 10.1132 28.7026 10.0458 28.2894 9.89086C27.8763 9.73593 27.4998 9.49681 27.184 9.18869C26.8829 8.8537 26.6509 8.46251 26.5014 8.0376C26.352 7.61269 26.2879 7.16243 26.313 6.71269C26.301 6.09852 26.4346 5.49025 26.703 4.93769C26.9458 4.44222 27.3246 4.02603 27.795 3.73769C28.2775 3.44736 28.832 3.29869 29.395 3.30869C29.7771 3.28925 30.1588 3.3556 30.512 3.50285C30.8651 3.6501 31.1809 3.87453 31.436 4.15969C31.9599 4.82246 32.2228 5.65421 32.175 6.49769V6.69769ZM29.406 4.12169C29.1622 4.11162 28.9188 4.15011 28.6899 4.23491C28.4611 4.31972 28.2514 4.44915 28.073 4.61569C27.7068 4.99424 27.4761 5.48333 27.417 6.00669H31.226C31.2125 5.49177 31.0218 4.99727 30.686 4.60669C30.5182 4.4411 30.3177 4.31241 30.0973 4.22888C29.8768 4.14536 29.6414 4.10885 29.406 4.12169ZM36.816 3.30269C37.0187 3.30055 37.2206 3.32681 37.416 3.38069L37.39 4.34269C37.1675 4.27114 36.9346 4.23734 36.701 4.24269C36.436 4.22248 36.1699 4.26553 35.9248 4.36828C35.6796 4.47103 35.4624 4.63054 35.291 4.83369C34.9775 5.24587 34.8148 5.75306 34.83 6.27069V9.99769H33.774V5.29169C33.779 4.6792 33.7456 4.067 33.674 3.45869H34.674L34.774 4.66769C34.9186 4.25113 35.1976 3.89444 35.567 3.65369C35.94 3.41697 36.3743 3.29493 36.816 3.30269ZM43.823 6.69769H39.023C38.9817 7.37537 39.1874 8.04505 39.602 8.58269C39.8128 8.80262 40.0692 8.97364 40.3533 9.0837C40.6373 9.19376 40.9421 9.24018 41.246 9.21969C42.0176 9.21792 42.7642 8.94582 43.356 8.45069L43.707 9.21769C43.3892 9.50497 43.0144 9.72202 42.607 9.85469C42.1665 10.0097 41.7029 10.0888 41.236 10.0887C40.7946 10.1139 40.3528 10.0468 39.9387 9.89189C39.5247 9.73694 39.1474 9.49745 38.831 9.18869C38.5287 8.85353 38.2957 8.46183 38.1455 8.03618C37.9953 7.61053 37.9309 7.15936 37.956 6.70869C37.944 6.09452 38.0776 5.48625 38.346 4.93369C38.5888 4.43822 38.9676 4.02203 39.438 3.73369C39.9205 3.44336 40.475 3.29469 41.038 3.30469C41.4201 3.28525 41.8018 3.35159 42.155 3.49885C42.5081 3.6461 42.8239 3.87053 43.079 4.15569C43.6056 4.8188 43.8704 5.65223 43.823 6.49769V6.69769ZM41.056 4.12169C40.8123 4.11175 40.5691 4.15031 40.3405 4.23511C40.1118 4.31991 39.9023 4.44927 39.724 4.61569C39.3574 4.9941 39.1264 5.4832 39.067 6.00669H42.876C42.8628 5.49189 42.6725 4.9974 42.337 4.60669C42.1691 4.44097 41.9684 4.3122 41.7478 4.22868C41.5272 4.14515 41.2915 4.10871 41.056 4.12169ZM51.181 0.429688V9.99769H50.141V8.81469C49.9592 9.21204 49.6564 9.54175 49.276 9.75669C48.8646 9.98443 48.4001 10.099 47.93 10.0887C47.394 10.0988 46.867 9.94951 46.416 9.65969C45.9694 9.36386 45.6155 8.94789 45.395 8.45969C45.1427 7.89803 45.0183 7.2873 45.031 6.67169C45.0177 6.06116 45.14 5.45529 45.389 4.89769C45.6069 4.41396 45.9619 4.00475 46.41 3.72069C46.8667 3.43917 47.3946 3.29478 47.931 3.30469C48.399 3.2939 48.8613 3.40853 49.27 3.63669C49.6447 3.85084 49.9442 4.17522 50.128 4.56569V0.429688H51.181ZM48.139 9.21769C48.4203 9.23344 48.7014 9.18219 48.959 9.06814C49.2166 8.9541 49.4435 8.78052 49.621 8.56169C50.0001 8.01626 50.1834 7.35856 50.141 6.69569C50.182 6.03732 49.9987 5.3845 49.621 4.84369C49.4435 4.62485 49.2166 4.45128 48.959 4.33723C48.7014 4.22319 48.4203 4.17194 48.139 4.18769C47.8558 4.17342 47.5732 4.22465 47.313 4.33738C47.0529 4.45011 46.8222 4.62132 46.639 4.83769C46.2491 5.36619 46.0579 6.0152 46.099 6.67069C46.0581 7.34012 46.2487 8.00324 46.639 8.54869C46.8191 8.7699 47.0487 8.9457 47.3093 9.0619C47.5698 9.17811 47.854 9.23147 48.139 9.21769ZM59.878 3.30269C60.4144 3.29278 60.9423 3.43717 61.399 3.71869C61.848 4.00426 62.2047 4.41375 62.426 4.89769C62.6791 5.45416 62.8035 6.06052 62.79 6.67169C62.8027 7.2873 62.6783 7.89803 62.426 8.45969C62.2046 8.94914 61.8484 9.36539 61.399 9.65969C60.9452 9.94908 60.4161 10.0983 59.878 10.0887C59.4093 10.0996 58.9464 9.98279 58.539 9.75069C58.1579 9.52568 57.8542 9.1902 57.668 8.78869V9.99769H56.615V0.429688H57.668V4.61569C57.8446 4.20682 58.1473 3.86517 58.532 3.64069C58.9421 3.40899 59.4071 3.29222 59.878 3.30269ZM59.683 9.21769C59.9654 9.23113 60.247 9.17742 60.5046 9.06095C60.7622 8.94448 60.9885 8.76858 61.165 8.54769C61.5509 8.00046 61.7389 7.33807 61.698 6.66969C61.7388 6.01621 61.5526 5.36871 61.171 4.83669C60.9909 4.61977 60.7625 4.448 60.5041 4.33514C60.2457 4.22227 59.9645 4.17143 59.683 4.18669C59.4002 4.16976 59.1175 4.2198 58.8577 4.33274C58.5979 4.44569 58.3685 4.61835 58.188 4.83669C57.8084 5.37924 57.625 6.03493 57.668 6.69569C57.6256 7.35856 57.8089 8.01626 58.188 8.56169C58.3679 8.78112 58.597 8.95492 58.8568 9.06893C59.1167 9.18293 59.3997 9.2339 59.683 9.21769ZM70.083 3.45869L67.028 10.5977C66.7821 11.2438 66.364 11.8103 65.819 12.2357C65.2812 12.6036 64.6685 12.8478 64.025 12.9507L63.804 12.1317C64.3025 12.0413 64.7783 11.8534 65.204 11.5787C65.5553 11.3013 65.826 10.935 65.988 10.5177L66.248 9.93269L63.479 3.45869H64.584L66.794 8.85869L69.03 3.45869H70.083Z" fill="#9299B4"/>
+                    </svg>
+                    <svg width="52" height="30" viewBox="0 0 52 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.36603 26.6116L4.46604 24.2116C4.3507 23.9069 4.23104 23.5339 4.10704 23.0926C4.01808 23.4718 3.90689 23.8454 3.77404 24.2116L2.86504 26.6116H5.36504H5.36603ZM6.60804 29.8916L5.64604 27.4226H2.54604L1.59504 29.8916H0.686035L3.74104 22.1016H4.49804L7.53904 29.8916H6.60904H6.60804Z" fill="#3461A2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.01204 24.0764V27.8484C8.98174 28.2287 9.09363 28.6068 9.32604 28.9094C9.45542 29.0351 9.61038 29.1314 9.78036 29.1918C9.95034 29.2522 10.1313 29.2753 10.311 29.2594C10.5515 29.2808 10.7937 29.2468 11.019 29.1601C11.2444 29.0735 11.4469 28.9364 11.611 28.7594C11.9269 28.2782 12.0716 27.7048 12.022 27.1314V24.0824H12.878V29.8964H12.169L12.046 29.1164H11.999C11.8247 29.4016 11.571 29.6299 11.269 29.7734C10.9363 29.9302 10.5718 30.0082 10.204 30.0014C9.92613 30.0237 9.64654 29.9911 9.38126 29.9053C9.11598 29.8195 8.87022 29.6822 8.65804 29.5014C8.46955 29.2801 8.32709 29.0235 8.239 28.7466C8.15092 28.4696 8.11897 28.1778 8.14504 27.8884V24.0764H9.01104H9.01204ZM16.203 29.2764C16.3491 29.2764 16.4949 29.2643 16.639 29.2404C16.752 29.2228 16.8638 29.1988 16.974 29.1684V29.8424C16.843 29.8994 16.7047 29.9378 16.563 29.9564C16.4019 29.985 16.2387 30.0001 16.075 30.0014C14.981 30.0014 14.4344 29.4087 14.435 28.2234V24.7654H13.625V24.3414L14.439 23.9764L14.8 22.7344H15.295V24.0764H16.939V24.7604H15.295V28.1824C15.276 28.4716 15.3624 28.7579 15.538 28.9884C15.6207 29.0822 15.7233 29.1561 15.8385 29.2048C15.9536 29.2534 16.0782 29.2755 16.203 29.2694V29.2764ZM18.603 26.9774C18.5632 27.5759 18.7156 28.1715 19.038 28.6774C19.1964 28.8602 19.3922 29.0067 19.6122 29.1072C19.8322 29.2077 20.0712 29.2597 20.313 29.2597C20.5549 29.2597 20.7939 29.2077 21.0139 29.1072C21.2339 29.0067 21.4297 28.8602 21.588 28.6774C21.9121 28.1722 22.0653 27.5762 22.025 26.9774C22.0653 26.3836 21.912 25.7927 21.588 25.2934C21.4363 25.1002 21.2398 24.9469 21.0156 24.8465C20.7914 24.7462 20.5462 24.7019 20.301 24.7174C20.0591 24.7017 19.817 24.7452 19.5957 24.8442C19.3744 24.9431 19.1806 25.0946 19.031 25.2854C18.7109 25.789 18.5605 26.382 18.602 26.9774H18.603ZM22.911 26.9774C22.9587 27.7783 22.7094 28.5686 22.211 29.1974C21.9702 29.4657 21.6725 29.6767 21.3396 29.8152C21.0067 29.9536 20.6471 30.0158 20.287 29.9974C19.8124 30.0057 19.3452 29.8788 18.94 29.6314C18.5405 29.3785 18.2247 29.0132 18.032 28.5814C17.8095 28.0779 17.7003 27.5317 17.712 26.9814C17.6633 26.183 17.91 25.3946 18.405 24.7664C18.6463 24.4993 18.9444 24.2897 19.2774 24.153C19.6103 24.0163 19.9697 23.956 20.329 23.9764C20.6841 23.9611 21.038 24.0261 21.3644 24.1667C21.6908 24.3073 21.9813 24.5198 22.214 24.7884C22.7088 25.4113 22.9579 26.1941 22.914 26.9884L22.911 26.9774ZM28.285 29.9014V26.1344C28.3148 25.7536 28.2026 25.3753 27.97 25.0724C27.8403 24.9472 27.6853 24.8511 27.5154 24.7908C27.3455 24.7304 27.1647 24.7071 26.985 24.7224C26.7451 24.7016 26.5036 24.7352 26.2786 24.8207C26.0535 24.9063 25.8506 25.0415 25.685 25.2164C25.3673 25.6967 25.2221 26.2707 25.273 26.8444V29.8954H24.416V24.0764H25.116L25.256 24.8764H25.296C25.4737 24.5881 25.7302 24.3567 26.035 24.2094C26.3631 24.0508 26.7237 23.971 27.088 23.9764C27.3651 23.9555 27.6435 23.9896 27.9073 24.0768C28.1711 24.164 28.415 24.3025 28.625 24.4844C28.8146 24.7064 28.958 24.9641 29.0466 25.2423C29.1352 25.5205 29.1673 25.8136 29.141 26.1044V29.8984H28.285V29.9014ZM31.474 26.9884C31.4339 27.5868 31.586 28.1824 31.908 28.6884C32.0665 28.8712 32.2624 29.0178 32.4825 29.1183C32.7025 29.2187 32.9416 29.2707 33.1835 29.2707C33.4255 29.2707 33.6645 29.2187 33.8846 29.1183C34.1047 29.0178 34.3006 28.8712 34.459 28.6884C34.7828 28.1831 34.9356 27.5871 34.895 26.9884C34.9351 26.3947 34.7822 25.804 34.459 25.3044C34.3072 25.1111 34.1106 24.9576 33.8862 24.8573C33.6618 24.7569 33.4163 24.7127 33.171 24.7284C32.9293 24.7127 32.6873 24.7562 32.4662 24.8552C32.245 24.9542 32.0514 25.1056 31.902 25.2964C31.5814 25.7998 31.431 26.393 31.473 26.9884H31.474ZM35.781 26.9884C35.8283 27.7892 35.5791 28.5795 35.081 29.2084C34.8399 29.4766 34.542 29.6876 34.209 29.826C33.8759 29.9644 33.5162 30.0267 33.156 30.0084C32.6814 30.0167 32.2142 29.8898 31.809 29.6424C31.4095 29.3895 31.0937 29.0242 30.901 28.5924C30.6788 28.0888 30.57 27.5426 30.582 26.9924C30.5335 26.1942 30.7797 25.406 31.274 24.7774C31.5143 24.5086 31.8118 24.2972 32.1446 24.1586C32.4774 24.02 32.837 23.9577 33.197 23.9764C33.5522 23.9611 33.9063 24.0262 34.2328 24.1668C34.5594 24.3074 34.85 24.5199 35.083 24.7884C35.5774 25.4115 35.8264 26.1941 35.783 26.9884H35.781ZM44.492 29.9014V26.1124C44.5193 25.7422 44.4176 25.374 44.204 25.0704C44.0901 24.9481 43.9499 24.8532 43.794 24.7929C43.6381 24.7327 43.4706 24.7085 43.304 24.7224C43.084 24.7044 42.8628 24.7378 42.6579 24.8199C42.4529 24.902 42.2698 25.0305 42.123 25.1954C41.8359 25.6226 41.7017 26.1343 41.742 26.6474V29.8944H40.885V26.1124C40.9125 25.742 40.8104 25.3736 40.596 25.0704C40.4819 24.9484 40.3417 24.8537 40.1858 24.7935C40.03 24.7332 39.8626 24.7089 39.696 24.7224C39.4739 24.7042 39.2506 24.7402 39.0455 24.8273C38.8403 24.9144 38.6593 25.05 38.518 25.2224C38.2279 25.7125 38.0972 26.2807 38.144 26.8484V29.8994H37.288V24.0764H37.988L38.128 24.8764H38.168C38.3289 24.5949 38.5664 24.3649 38.853 24.2134C39.1544 24.0537 39.491 23.9722 39.832 23.9764C40.1887 23.933 40.5499 24.0056 40.8621 24.1833C41.1744 24.3611 41.4212 24.6346 41.566 24.9634H41.606C41.7766 24.6578 42.031 24.4074 42.339 24.2414C42.675 24.0608 43.0517 23.9695 43.433 23.9764C43.6947 23.9561 43.9576 23.9907 44.2051 24.078C44.4526 24.1653 44.6791 24.3034 44.87 24.4834C45.2281 24.9437 45.3985 25.5225 45.347 26.1034V29.8974L44.492 29.9014Z" fill="#3461A2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.302 22.7412C48.9295 22.7192 48.5616 22.8325 48.266 23.0603C48.143 23.1639 48.0453 23.2943 47.9803 23.4414C47.9154 23.5885 47.8848 23.7485 47.891 23.9092C47.8851 24.218 47.9966 24.5175 48.203 24.7472C48.5338 25.0586 48.9262 25.2971 49.355 25.4472C49.7588 25.302 50.1251 25.0683 50.427 24.7632C50.6337 24.5272 50.7456 24.223 50.741 23.9092C50.7476 23.7473 50.7165 23.5859 50.65 23.4381C50.5835 23.2902 50.4836 23.1598 50.358 23.0573C50.0542 22.8316 49.6808 22.7197 49.303 22.7412H49.302ZM47.643 27.9362C47.6335 28.1247 47.6686 28.3128 47.7454 28.4851C47.8222 28.6575 47.9385 28.8093 48.085 28.9283C48.4453 29.1856 48.8831 29.3112 49.325 29.2842C49.7652 29.3112 50.2005 29.1796 50.552 28.9132C50.6976 28.7878 50.8127 28.6308 50.8885 28.4543C50.9644 28.2777 50.9991 28.0862 50.99 27.8942C50.9887 27.7216 50.9515 27.5511 50.8807 27.3935C50.81 27.236 50.7072 27.0949 50.579 26.9792C50.1543 26.6294 49.6655 26.3655 49.14 26.2022C48.7082 26.3655 48.3179 26.6223 47.997 26.9542C47.7609 27.2266 47.6344 27.5769 47.642 27.9372L47.643 27.9362ZM49.314 22.0272C49.9131 21.9949 50.5051 22.1693 50.991 22.5212C51.1941 22.6837 51.3559 22.8918 51.4631 23.1287C51.5703 23.3656 51.62 23.6245 51.608 23.8842C51.6095 24.2623 51.4849 24.63 51.254 24.9292C50.9476 25.2989 50.5603 25.5931 50.122 25.7892C50.6312 26.0035 51.0875 26.3263 51.459 26.7352C51.7229 27.0595 51.8645 27.4662 51.859 27.8842C51.8709 28.1752 51.8166 28.4651 51.7002 28.732C51.5838 28.999 51.4083 29.236 51.187 29.4253C50.6642 29.8341 50.0106 30.0388 49.348 30.0013C48.6709 30.0448 47.9995 29.8526 47.448 29.4572C47.2249 29.2698 47.0485 29.0329 46.9329 28.7655C46.8173 28.498 46.7656 28.2072 46.782 27.9162C46.807 27.4465 46.9754 26.9958 47.2646 26.6247C47.5537 26.2537 47.9496 25.9803 48.399 25.8412C47.9853 25.6287 47.6268 25.3226 47.352 24.9472C47.1413 24.629 47.0308 24.2549 47.035 23.8733C47.0256 23.6162 47.0769 23.3605 47.1848 23.127C47.2927 22.8935 47.4541 22.6887 47.656 22.5293C48.1354 22.1744 48.7234 21.9976 49.319 22.0293" fill="#F1722E"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9942 2.92324C41.8732 2.44807 41.6364 2.0103 41.3048 1.64907C40.9732 1.28783 40.5573 1.01441 40.0942 0.853236C38.8943 0.46843 37.621 0.370136 36.3762 0.566236C36.4102 0.515236 36.4162 0.480236 36.4392 0.473236C37.792 0.106556 39.1947 -0.0413133 40.5942 0.0352363C42.0212 0.163236 42.8412 0.884236 42.5622 1.77824C42.4563 2.07403 42.3327 2.36321 42.1922 2.64424C42.1311 2.74449 42.0623 2.83979 41.9862 2.92924" fill="#F1722E"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.2351 7.26749C28.0101 7.24349 27.8501 7.21449 27.6901 7.20949C26.5202 7.17166 25.352 7.32604 24.2321 7.66649C21.1368 8.67515 18.3026 10.3552 15.9321 12.5865C15.3355 13.1718 14.7905 13.8075 14.3031 14.4865C13.9486 14.9222 13.6893 15.4274 13.5421 15.9695C13.3621 16.6695 13.6751 17.0695 14.4141 17.0825C14.5736 17.0869 14.7331 17.0779 14.8911 17.0555C15.8374 16.875 16.7504 16.5502 17.5981 16.0925C19.268 15.2362 20.8465 14.2123 22.3091 13.0365C23.1082 12.4391 23.835 11.7508 24.4751 10.9855C24.8193 10.5715 25.189 10.1794 25.5821 9.81149C26.3981 9.01949 27.2311 8.24249 28.0561 7.45949C28.1011 7.41649 28.1411 7.36649 28.2361 7.26549L28.2351 7.26749ZM23.7941 15.1535C23.4801 15.4025 23.1411 15.6675 22.8041 15.9375C20.9077 17.4974 18.7421 18.6974 16.4141 19.4785C15.4427 19.844 14.3977 19.9709 13.3671 19.8485C12.5461 19.7593 11.7644 19.4505 11.1041 18.9545C10.6495 18.5906 10.3026 18.1098 10.1007 17.5636C9.89879 17.0174 9.84949 16.4266 9.9581 15.8545C10.2073 14.3066 10.8968 12.8632 11.9441 11.6965C13.1208 10.3422 14.5046 9.18279 16.0441 8.26149C17.9951 6.9692 20.1445 6.00511 22.4071 5.40749C23.9178 4.98667 25.5065 4.92808 27.0441 5.23649C27.3621 5.30749 27.6741 5.41049 27.9841 5.51349C28.4025 5.65367 28.7548 5.94264 28.9741 6.32549C29.1311 6.24749 29.2891 6.17949 29.4371 6.09449C30.6619 5.37742 31.9893 4.85201 33.3731 4.53649C34.0001 4.39949 34.6501 4.35949 35.2891 4.27749C35.4003 4.25895 35.5139 4.25895 35.6251 4.27749C35.3701 4.42849 35.1111 4.57149 34.8611 4.73049C33.8449 5.39738 32.9079 6.17774 32.0681 7.05649C30.2996 8.81611 28.7971 10.8242 27.6081 13.0175C27.098 13.9021 26.746 14.8689 26.5681 15.8745C26.5262 16.1665 26.5282 16.4631 26.5741 16.7545C26.6741 17.3855 27.0151 17.6165 27.6741 17.5635C28.2514 17.4956 28.8063 17.2995 29.2981 16.9895C30.5488 16.2375 31.691 15.3184 32.6931 14.2575C33.9275 13.0067 35.0361 11.6378 36.0031 10.1705C36.891 8.91939 37.5558 7.52416 37.9681 6.04649C38.049 5.6953 38.0886 5.33587 38.0861 4.97549C38.0912 4.72414 38.0166 4.47762 37.8729 4.27135C37.7291 4.06509 37.5237 3.90969 37.2861 3.82749C36.7086 3.59123 36.0823 3.49858 35.4611 3.55749C33.9295 3.65744 32.4268 4.02253 31.0201 4.63649C30.9621 4.66049 30.9011 4.68149 30.7861 4.72449C32.4437 3.04108 34.5332 1.84703 36.8251 1.27349C37.5221 1.10049 38.2502 1.09638 38.9491 1.26149C39.4849 1.39609 39.9701 1.68307 40.3462 2.08771C40.7223 2.49236 40.973 2.99732 41.0681 3.54149C41.3204 4.70935 41.2569 5.92334 40.8841 7.05849C40.2504 9.22713 39.2237 11.2609 37.8551 13.0585C36.6528 14.7325 35.2349 16.2405 33.6381 17.5435C32.1858 18.8032 30.4959 19.7593 28.6681 20.3555C27.6479 20.6667 26.559 20.6733 25.5351 20.3745C24.973 20.194 24.4998 19.8079 24.2101 19.2935C23.8325 18.6803 23.6421 17.9703 23.6621 17.2505C23.6731 16.5565 23.7461 15.8645 23.7941 15.1505" fill="#3461A2"/>
+                    </svg>
+                </div>
+                <div style="height: 100%;width: 15%;display: flex;justify-content: space-between;align-items: center;margin-right:20px;">
+                    <label style="color: red;">
+                        Terms of use
+                    </label>
+                    <label style="color: red;">
+                        Privacy policy
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
