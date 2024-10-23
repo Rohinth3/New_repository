@@ -53,7 +53,7 @@
     const smallBox = document.createElement('div')
     smallBox.style.height = "70%"
     smallBox.style.width = "90%"
-    // smallBox.style.background = "blue"
+    smallBox.style.background = "blue"
     smallBox.style.display = "flex"
     smallBox.style.flexDirection = "column"
     smallBox.style.marginTop = "30px"
@@ -70,7 +70,7 @@
     const smallDiv = document.createElement('div')
     smallDiv.style.marginTop = "50px"
     smallDiv.style.height = "47%"
-    // smallDiv.style.background = "yellow"
+    smallDiv.style.background = "yellow"
     smallDiv.style.display = "flex"
     smallDiv.style.flexDirection = "column"
     smallBox.appendChild(smallDiv)
@@ -87,6 +87,7 @@
     const emailDiv = document.createElement ('div')
     emailDiv.style.display = "flex"
     emailDiv.style.flexDirection = "column"
+    emailDiv.style.background = "orange"
     smallDiv.appendChild(emailDiv)
     emailDiv.append(emailLab,emailLab1)
 
@@ -138,11 +139,13 @@
 
 
     //forget pass
-    const  remainDiv2 = document.createElement('div')
+    const  remainDiv2 = document.createElement('a')
     remainDiv2.style.width = "29%"
     remainDiv2.style.display = "flex"
     remainDiv2.style.justifyContent = "flex-end"
     remainDiv2.style.fontSize = "13px"
+    remainDiv2.setAttribute ('href',"https://www.facebook.com")
+    remainDiv2.target = "blank"
     remainDiv2.textContent ="Forget password?"
     // remainDiv2.style.background = "red"
     remainDiv.append(remainDiv1,remainDiv2)
@@ -212,6 +215,7 @@
     text2.textContent = "log in"
     text2.style.color = "black"
     text2.setAttribute('href',"https://www.youtube.com/")
+    text2.target = "blank"
     // <a target="_blank" href="www.dch"/>
     mainText.append(text,text2)
 
